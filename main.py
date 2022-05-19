@@ -7,7 +7,7 @@ import string
 
 class wordle():
     def __init__(self):
-        with open('enable1.txt', 'r') as fp:
+        with open('scrabble_official_enable1.txt', 'r') as fp:
             words = fp.readlines()
         words = [w.replace('\n', '') for w in words]
         words = [word for word in words if len(word) == 5]
