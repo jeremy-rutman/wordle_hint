@@ -3,7 +3,12 @@ from itertools import permutations
 #from matplotlib import pyplot as plt
 import string 
 
+
 # todo - best guess takes all known letters and puts them into 'wrong' basket 
+# todo - use a better (smaller) dictionary 
+# todo - can a wordle letter appear twice?
+# todo - figure out when to actually guess the word and stop eliminating
+# todo - conditioinal or correlated probabilities - eg letter pairs etc 
 
 class wordle():
     def __init__(self):
