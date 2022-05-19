@@ -61,6 +61,9 @@ class wordle():
         return candidate_words
 
     def find_forcing_guesses(self,wordlist,lf,eliminated_letters,cwp,crp):
+        # crp - correct letter in right place
+        # crp - correct letter in wrong place
+        # el - eliminated letter
         crp_letter_list = [rightpos[0] for rightpos in crp]
         prevent_all = eliminated_letters+cwp+crp_letter_list
         print('all together',prevent_all)
